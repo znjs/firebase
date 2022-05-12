@@ -11,16 +11,38 @@
     <h1>Getting started with firebase 🔥</h1>
     <form class="add-item">
         <label for="title"></label>
-        <input type="text" name="title" id="title">
+        <input type="text" name="title" id="title" required>
         <label for="author"></label>
-        <input type="text" name="author" id="author">
+        <input type="text" name="author" id="author" required>
         <button class="add-btn">Add to database</button>
     </form>
-    <form action="">
+    <form class="del-item">
         <label for="doc-id"></label>
-        <input type="text" name="doc-id" id="doc-id">
+        <input type="text" name="docId" id="doc-id" required>
         <button class="del-btn">Remove from database</button>
     </form>
+    <form class="update-item">
+        <label for="updateItem"></label>
+        <input type="text" name="updateItem" id="updateItem" required>
+        <button class="update-btn">Update item</button>
+    </form>
+    <form class="signup">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <button>signup</button>
+    </form>
+    <button class="logout">Logout</button>
+
+    <form class="login">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <button>login</button>
+    </form>
+    <button class="unsub">Unsubscribe</button>
     <script src="/dist/main.js"></script>
 </body>
 
